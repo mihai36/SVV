@@ -1,0 +1,717 @@
+{
+  "id": "f4a32096-db26-4312-b769-2a0a3ceee2bb",
+  "version": "2.0",
+  "name": "SVV-TestSite",
+  "url": "http://localhost:10008/a.html",
+  "tests": [{
+    "id": "2c9e289f-d8cf-40bc-aa01-71e65cc3b9e9",
+    "name": "TestSiteUp",
+    "commands": [{
+      "id": "5e14dc66-6242-489c-821d-31ef745c47b7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0bef9d96-46a9-45ec-8448-b5ee44b5d2f5",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "fe98c73a-fd78-473e-a902-a083fb0d8840",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Welcome!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "cf18376f-c882-444b-9bbe-977334448b0f",
+    "name": "TestSiteLinksOK",
+    "commands": [{
+      "id": "348fe33e-aba8-499f-aa87-b6c9893b2516",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "385585c9-05bd-4df8-b68d-67e1e4cc6cd0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "20a186fe-8209-4b2e-9638-9287222dd9f0",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=do external links work?",
+      "targets": [
+        ["linkText=do external links work?", "linkText"],
+        ["css=tr:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do external links work?')]", "xpath:link"],
+        ["xpath=//a[@href='http://google.com']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'do external links work?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d2fca39-6d96-499e-84d9-3cf9b89cd38f",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=do simple relative internal links work?",
+      "targets": [
+        ["linkText=do simple relative internal links work?", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do simple relative internal links work?')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'b.html')]", "xpath:href"],
+        ["xpath=//tr[2]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do simple relative internal links work?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ecb673c1-5b2c-49e3-b6db-999afa17be29",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=do general relative links work",
+      "targets": [
+        ["linkText=do general relative links work", "linkText"],
+        ["css=tr:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do general relative links work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'aaa/b.html')]", "xpath:href"],
+        ["xpath=//tr[3]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do general relative links work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e6b9a143-f57f-4eac-ab2e-8f43e0e2bbc6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=do simple absolute links work",
+      "targets": [
+        ["linkText=do simple absolute links work", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do simple absolute links work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/c.html')]", "xpath:href"],
+        ["xpath=//tr[4]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do simple absolute links work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bce777e9-9592-449c-b2fb-7402348b403b",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=do general absolute links work",
+      "targets": [
+        ["linkText=do general absolute links work", "linkText"],
+        ["css=tr:nth-child(5) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do general absolute links work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/aaa/bbb/c.html')]", "xpath:href"],
+        ["xpath=//tr[5]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do general absolute links work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b13b052c-567b-440d-bb7e-183513784cf9",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=do URLs with spaces work",
+      "targets": [
+        ["linkText=do URLs with spaces work", "linkText"],
+        ["css=tr:nth-child(6) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do URLs with spaces work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'a b.html')]", "xpath:href"],
+        ["xpath=//tr[6]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do URLs with spaces work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4ba3fdb-bb86-4757-a0cd-6e15801be7c7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=do URLs with %20 work",
+      "targets": [
+        ["linkText=do URLs with %20 work", "linkText"],
+        ["css=tr:nth-child(7) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do URLs with %20 work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'a%20b.html')]", "xpath:href"],
+        ["xpath=//tr[7]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do URLs with %20 work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aec6d31c-7edc-472f-b1ea-9d9c486fd478",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=do TXT files work",
+      "targets": [
+        ["linkText=do TXT files work", "linkText"],
+        ["css=tr:nth-child(8) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do TXT files work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'a.txt')]", "xpath:href"],
+        ["xpath=//tr[8]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do TXT files work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "371d3c98-7c19-42dd-9347-2273128affdb",
+    "name": "TestSiteImagesOK",
+    "commands": [{
+      "id": "2cb582c5-2de1-4af0-a85f-06cc9a114880",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "02e0b0f6-b0db-4a5e-8f6a-8d989816f254",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6425b785-3220-4611-81ad-98fb9124e609",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=tr:nth-child(1) img",
+      "targets": [
+        ["css=tr:nth-child(1) img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://www.loose.upt.ro/~mihai/yes.jpg')]", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "7a824ee6-3cd9-4649-ad1a-9704c283c9a5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(1) img",
+      "targets": [
+        ["css=tr:nth-child(1) img", "css:finder"],
+        ["xpath=//img[contains(@src,'http://www.loose.upt.ro/~mihai/yes.jpg')]", "xpath:img"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "81be3c44-77a1-4654-8b44-6ba560b3fad3",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=tr:nth-child(2) img",
+      "targets": [
+        ["css=tr:nth-child(2) img", "css:finder"],
+        ["xpath=//tr[2]/td[2]/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "e499f273-5c2a-4335-9b89-b5800118703c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(2) img",
+      "targets": [
+        ["css=tr:nth-child(2) img", "css:finder"],
+        ["xpath=//tr[2]/td[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5c3919c-ff74-470b-a2f5-6e10c2adf6e2",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=tr:nth-child(3) img",
+      "targets": [
+        ["css=tr:nth-child(3) img", "css:finder"],
+        ["xpath=//tr[3]/td[2]/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "205e96f8-a2c5-44e8-93e0-66e76937f4aa",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(3) img",
+      "targets": [
+        ["css=tr:nth-child(3) img", "css:finder"],
+        ["xpath=//tr[3]/td[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a94c035b-5704-47c2-bde4-5472adbaa5ff",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=tr:nth-child(4) img",
+      "targets": [
+        ["css=tr:nth-child(4) img", "css:finder"],
+        ["xpath=//tr[4]/td[2]/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "12e3ea67-1e47-4442-aaac-a7ca1a3fef78",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(4) img",
+      "targets": [
+        ["css=tr:nth-child(4) img", "css:finder"],
+        ["xpath=//tr[4]/td[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f1932199-90f6-402c-b8b0-8fc81a86d535",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=tr:nth-child(5) img",
+      "targets": [
+        ["css=tr:nth-child(5) img", "css:finder"],
+        ["xpath=//tr[5]/td[2]/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "e0b12d01-458d-4379-b741-953037066212",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(5) img",
+      "targets": [
+        ["css=tr:nth-child(5) img", "css:finder"],
+        ["xpath=//tr[5]/td[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1195b77a-0cdd-4f45-bb8e-21fc8d8884c1",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=tr:nth-child(6) img",
+      "targets": [
+        ["css=tr:nth-child(6) img", "css:finder"],
+        ["xpath=//tr[6]/td[2]/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "acb6a739-87a9-4be6-a656-325d60275f6c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(6) img",
+      "targets": [
+        ["css=tr:nth-child(6) img", "css:finder"],
+        ["xpath=//tr[6]/td[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9422b5c4-352c-4fd9-a71c-308d52ce9679",
+      "comment": "",
+      "command": "waitForElementVisible",
+      "target": "css=tr:nth-child(7) img",
+      "targets": [
+        ["css=tr:nth-child(7) img", "css:finder"],
+        ["xpath=//tr[7]/td[2]/img", "xpath:position"]
+      ],
+      "value": "5000"
+    }, {
+      "id": "d04ad112-5a5b-4182-8e92-09df60a17b82",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tr:nth-child(7) img",
+      "targets": [
+        ["css=tr:nth-child(7) img", "css:finder"],
+        ["xpath=//tr[7]/td[2]/img", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "856edc4b-1b9e-4d85-8b2b-5d33a7ff76ec",
+    "name": "TestSiteExternalLinksOK",
+    "commands": [{
+      "id": "81cce70f-08d9-43de-b846-0f2b13389f2e",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9642cb1-44c5-44bf-bd60-cf8e03a4e540",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7558c597-a318-4585-8f31-90fea8728831",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=do external links work?",
+      "targets": [
+        ["linkText=do external links work?", "linkText"],
+        ["css=tr:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do external links work?')]", "xpath:link"],
+        ["xpath=//a[@href='http://google.com']", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'do external links work?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "70b62d47-e58d-42de-add4-098f18bc42a6",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Google",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "968b2abf-e7b3-42fe-9d80-bc8a44e83bf1",
+    "name": "TestSiteSimpleRelativeInternalLinksOK",
+    "commands": [{
+      "id": "f376d73a-efd1-4f5b-8510-fa69c64c7c52",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aee63075-c5c5-43eb-920f-77b1361838ae",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b1c1060d-370c-426b-a46b-604340755cf7",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=do simple relative internal links work?",
+      "targets": [
+        ["linkText=do simple relative internal links work?", "linkText"],
+        ["css=tr:nth-child(2) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do simple relative internal links work?')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'b.html')]", "xpath:href"],
+        ["xpath=//tr[2]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do simple relative internal links work?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a343767b-0176-46b9-b434-d99db1c1cd75",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ad8953a2-3647-4512-8d28-4f4770aff536",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'back')]", "xpath:innerText"]
+      ],
+      "value": "back"
+    }]
+  }, {
+    "id": "e101f0ba-bb84-45d5-b02c-1f27c810fb05",
+    "name": "TestSiteGeneralRelativeLinksOK",
+    "commands": [{
+      "id": "624f7ddb-3527-4833-8c50-a1988d54db80",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "06ad58ed-d30e-413f-9288-348fa91ec209",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d61436cc-9a2c-45a0-8f13-767d86ec7d59",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=do general relative links work",
+      "targets": [
+        ["linkText=do general relative links work", "linkText"],
+        ["css=tr:nth-child(3) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do general relative links work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'aaa/b.html')]", "xpath:href"],
+        ["xpath=//tr[3]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do general relative links work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "f403d22e-07a5-4323-bdc4-f1695d4c9410",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da0e5110-e2b1-43f0-8fe6-30cd4a2de520",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'back')]", "xpath:innerText"]
+      ],
+      "value": "back"
+    }]
+  }, {
+    "id": "3dd3e5f0-1549-400e-b43a-db079e392d2a",
+    "name": "TestSiteSimpleAbsoluteLinks",
+    "commands": [{
+      "id": "1b156113-e1ff-4af8-a16c-f823bc169f99",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "284d96ec-a8e9-4cac-9b19-bc2a2fd60885",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aa8badaf-250a-46de-bbcc-8548059fc2bc",
+      "comment": "",
+      "command": "click",
+      "target": "css=tr:nth-child(4) > td:nth-child(1)",
+      "targets": [
+        ["css=tr:nth-child(4) > td:nth-child(1)", "css:finder"],
+        ["xpath=//tr[4]/td", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2572988e-768a-4805-974e-2fa4133f330b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=do simple absolute links work",
+      "targets": [
+        ["linkText=do simple absolute links work", "linkText"],
+        ["css=tr:nth-child(4) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do simple absolute links work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/c.html')]", "xpath:href"],
+        ["xpath=//tr[4]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do simple absolute links work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "43cbfc8c-8892-4f49-9ec5-e33477ee1d86",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "404 - Page not found",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3024365c-f789-472f-8263-5e075b0173cf",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'404 - Page not found')]", "xpath:innerText"]
+      ],
+      "value": "404 - Page not found"
+    }]
+  }, {
+    "id": "7818de88-b818-4a5a-8510-16aac022a859",
+    "name": "TestSiteGeneralAbsoluteLinksOK",
+    "commands": [{
+      "id": "055849c0-be04-49c6-80e4-48fc6e4b3bcb",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "210eeaaa-2bf0-4b24-9ad7-a0b16c877642",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=do general absolute links work",
+      "targets": [
+        ["linkText=do general absolute links work", "linkText"],
+        ["css=tr:nth-child(5) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do general absolute links work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, '/aaa/bbb/c.html')]", "xpath:href"],
+        ["xpath=//tr[5]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do general absolute links work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8bc91d2a-26a3-4c40-ad76-b91d245dec0d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'back')]", "xpath:innerText"]
+      ],
+      "value": "back"
+    }, {
+      "id": "5c445f6a-af9d-4784-911f-9c5453ce6c36",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "c",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "16aada79-6e09-4499-97cf-16e3ba3b94e3",
+    "name": "TestSiteURLSpacesOK",
+    "commands": [{
+      "id": "88309043-dadc-4ad7-8867-c38f91413017",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f52b94cb-8957-4432-8cab-55e27ab5527c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ac55ab15-3829-4d7a-a4aa-0435aee1569c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=do URLs with spaces work",
+      "targets": [
+        ["linkText=do URLs with spaces work", "linkText"],
+        ["css=tr:nth-child(6) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do URLs with spaces work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'a b.html')]", "xpath:href"],
+        ["xpath=//tr[6]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do URLs with spaces work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "8b5ca007-84bf-416c-9183-11fd20dc7b38",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "a b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a053767-960d-4faf-a4af-c8c3b9fe49d9",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'back')]", "xpath:innerText"]
+      ],
+      "value": "back"
+    }]
+  }, {
+    "id": "4b256e8c-aa30-42ab-9e60-c44b4eea555d",
+    "name": "TestSiteURL20OK",
+    "commands": [{
+      "id": "38d4dff5-4011-401d-a9f4-be13d21ea146",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c29ef67a-b6da-4552-9fe6-fec2c84a2a5b",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "342925de-89fd-4fb8-8514-ddfc47e2acb0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=do URLs with %20 work",
+      "targets": [
+        ["linkText=do URLs with %20 work", "linkText"],
+        ["css=tr:nth-child(7) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do URLs with %20 work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'a%20b.html')]", "xpath:href"],
+        ["xpath=//tr[7]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do URLs with %20 work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad2ff72e-a907-40ad-9c2b-5b0e7ff8b976",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "a b",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8caca025-5bd5-4d59-a9c5-f43908686cd0",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'back')]", "xpath:innerText"]
+      ],
+      "value": "back"
+    }]
+  }, {
+    "id": "b705798e-7de3-450e-8bb4-853b3b891d5e",
+    "name": "TestSiteTxtOK",
+    "commands": [{
+      "id": "563f74a6-cc9e-4de5-b976-5592515e0a2f",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:10008/a.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9977b683-6cfe-46c9-a1d9-e7d8c4b5894e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "873x1074",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9679c9c5-ac99-425c-860e-6816360135e4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=do TXT files work",
+      "targets": [
+        ["linkText=do TXT files work", "linkText"],
+        ["css=tr:nth-child(8) a", "css:finder"],
+        ["xpath=//a[contains(text(),'do TXT files work')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'a.txt')]", "xpath:href"],
+        ["xpath=//tr[8]/td/a", "xpath:position"],
+        ["xpath=//a[contains(.,'do TXT files work')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3dc91b9a-b4ca-4ebe-9be6-24d03111ca87",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"],
+        ["xpath=//html[contains(.,'Hello TXT works')]", "xpath:innerText"]
+      ],
+      "value": "Hello TXT works"
+    }]
+  }],
+  "suites": [{
+    "id": "cac3862c-4a52-4fae-afaa-0af2bbb560f6",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["2c9e289f-d8cf-40bc-aa01-71e65cc3b9e9", "856edc4b-1b9e-4d85-8b2b-5d33a7ff76ec", "7818de88-b818-4a5a-8510-16aac022a859", "e101f0ba-bb84-45d5-b02c-1f27c810fb05", "371d3c98-7c19-42dd-9347-2273128affdb", "cf18376f-c882-444b-9bbe-977334448b0f", "3dd3e5f0-1549-400e-b43a-db079e392d2a", "968b2abf-e7b3-42fe-9d80-bc8a44e83bf1", "b705798e-7de3-450e-8bb4-853b3b891d5e", "4b256e8c-aa30-42ab-9e60-c44b4eea555d", "16aada79-6e09-4499-97cf-16e3ba3b94e3"]
+  }],
+  "urls": ["http://localhost:10008/", "http://localhost:10008/a.html"],
+  "plugins": []
+}

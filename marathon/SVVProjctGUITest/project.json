@@ -1,0 +1,63 @@
+{
+  "project-settings": {
+    "allure.tests.management.pattern": "",
+    "marathon.issue.dir": "%marathon.project.dir%/Issues",
+    "marathon.checklist.dir": "%marathon.project.dir%/Checklists",
+    "marathon.test.dir": "%marathon.project.dir%/TestCases",
+    "marathon.application.rubyhome": "",
+    "marathon.application.launchtime": "60000",
+    "allure.issues.tracker.pattern": "",
+    "marathon.data.dir": "%marathon.project.dir%/TestData",
+    "marathon.application.classpath": "%marathon.project.dir%/../../java-workspace/eclipse-workspace/webserver/bin",
+    "marathon.application.arguments": "",
+    "marathon.feature.dir": "%marathon.project.dir%/Features",
+    "marathon.application.working.dir": "D:\\work\\java-workspace\\eclipse-workspace\\webserver\\bin",
+    "marathon.capture.dir": "%marathon.project.dir%/Modules",
+    "marathon.project.launcher.model": "net.sourceforge.marathon.runtime.RuntimeLauncherModel",
+    "marathon.application.mainclass": "webserver.gui.WebServerGUI",
+    "marathon.story.dir": "%marathon.project.dir%/Stories",
+    "marathon.fixture.dir": "%marathon.project.dir%/Fixtures",
+    "marathon.project.description": "",
+    "marathon.application.java.home": "",
+    "marathon.project.name": "SVVProjctGUITest",
+    "marathon.suite.dir": "%marathon.project.dir%/TestSuites",
+    "marathon.application.rubypath": "",
+    "marathon.project.script.model": "net.sourceforge.marathon.ruby.RubyScriptModel",
+    "marathon.application.vm.arguments": ""
+  },
+  "display": {
+    "maximized": false,
+    "fullScreen": false,
+    "iconified": false,
+    "window.x": 0.0,
+    "window.y": 0.0,
+    "window.w": 1280.0,
+    "window.h": 1024.0
+  },
+  "navigator": {},
+  "workspace": {
+    "state": {
+      "dockables": [
+        "Navigator",
+        "../../../freeware/programming/java-testing/marathon-5.5.0.0/readme/index.html",
+        "TestCases/PortTest.rb",
+        "TestCases/PortTest.rb",
+        "TestCases/WebRootEnabled.rb",
+        "TestCases/WebRootEnabled.rb",
+        "TestCases/PortEnabled.rb",
+        "TestCases/PortEnabled.rb",
+        "TestCases/MaintenanceRootEnabled.rb",
+        "TestCases/MaintenanceRootEnabled.rb",
+        "TestCases/MaintenanceCheckEnabledTest.rb",
+        "Output",
+        "Log",
+        "Results"
+      ]
+    }
+  },
+  "project": {
+    "fixture": "default"
+  },
+  "ace-editor": {},
+  "marathon": {}
+}

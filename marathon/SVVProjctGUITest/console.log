@@ -1,0 +1,106 @@
+'2021-09-12 11:35:54 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'100077
+ERROR...Thread Running
+100077
+./htdocs/
+
+Port value out of range: 100077
+Exception in thread "Thread-15" java.lang.NullPointerException
+	at webserver.server.WebServer.startServer(WebServer.java:73)
+	at webserver.gui.WebServerGUI$1$1.run(WebServerGUI.java:117)
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=recording -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=61925  -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-recorder-5.5.0.0.jar"=61922 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"
+*****  Open D:\work\java-testing\SVVProjctGUITest\TestCases\PortTest.rb (12.09.2021 11:39) *****
+'2021-09-12 11:39:29 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'*****  Record D:\work\java-testing\SVVProjctGUITest\TestCases\PortTest.rb (12.09.2021 11:39) *****
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=recording -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=59419  -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-recorder-5.5.0.0.jar"=59418 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"
+'2021-09-12 11:39:58 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'10077
+Thread Running
+10077
+./htdocs/
+Connection Socket Created
+Listening for connections on port : 10077
+
+Waiting for Connection
+Accept failed. - probably closing...
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=recording -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=59437  -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-recorder-5.5.0.0.jar"=59436 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"
+*****  Play D:\work\java-testing\SVVProjctGUITest\TestCases\PortTest.rb (12.09.2021 11:40) *****
+'2021-09-12 11:40:32 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'10077
+Thread Running
+10077
+./htdocs/
+Connection Socket Created
+Listening for connections on port : 10077
+
+Waiting for Connection
+Accept failed. - probably closing...
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=playing -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=59458 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"
+*****  Play D:\work\java-testing\SVVProjctGUITest\TestCases\PortTest.rb (12.09.2021 11:40) *****
+'2021-09-12 11:40:52 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'10077
+Thread Running
+10077
+./htdocs/
+Connection Socket Created
+Listening for connections on port : 10077
+
+Waiting for Connection
+Accept failed. - probably closing...
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=playing -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=59483 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"
+'2021-09-12 11:41:40 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'10008
+Thread Running
+10008
+./htdocs2/
+Connection Socket Created
+Listening for connections on port : 10008
+
+Waiting for Connection
+Accept failed. - probably closing...
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=recording -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=59516  -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-recorder-5.5.0.0.jar"=59515 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"
+'2021-09-12 11:42:57 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'10008
+Thread Running
+10008
+./htdocs/
+Connection Socket Created
+Listening for connections on port : 10008
+
+Waiting for Connection
+Accept failed. - probably closing...
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=recording -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=49752  -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-recorder-5.5.0.0.jar"=49749 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"
+'2021-09-12 11:43:53 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'10008
+Thread Running
+10008
+./htdocs/
+Connection Socket Created
+Listening for connections on port : 10008
+
+Waiting for Connection
+Accept failed. - probably closing...
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=recording -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=54492  -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-recorder-5.5.0.0.jar"=54491 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"
+'2021-09-12 11:44:49 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'10008
+Thread Running
+10008
+./htdocs/
+Connection Socket Created
+Listening for connections on port : 10008
+
+Waiting for Connection
+Accept failed. - probably closing...
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=recording -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=50503  -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-recorder-5.5.0.0.jar"=50502 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"
+*****  Play D:\work\java-testing\SVVProjctGUITest\TestCases\MaintenanceCheckEnabledTest.rb (12.09.2021 11:47) *****
+'2021-09-12 11:47:19 WARNING net.sourceforge.marathon.javaagent.JavaAgentHook$1$1 run Application is using a non-utf8 charset. Marathon might cause issues while playing
+'10008
+Thread Running
+10008
+./htdocs/
+Connection Socket Created
+Listening for connections on port : 10008
+
+Waiting for Connection
+Accept failed. - probably closing...
+Picked up JAVA_TOOL_OPTIONS: -DkeepLog=false -Dmarathon.launch.mode=javacommand -Dmarathon.mode=playing -javaagent:"D:\freeware\programming\java-testing\marathon-5.5.0.0\marathon-java-agent-5.5.0.0.jar"=50533 -Djava.util.logging.config.file="D:\work\java-testing\SVVProjctGUITest\logging.properties" -Dmarathon.project.dir="D:\work\java-testing\SVVProjctGUITest"

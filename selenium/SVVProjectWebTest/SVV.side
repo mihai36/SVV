@@ -1,0 +1,39 @@
+{
+  "id": "615a3b4f-e14d-472d-ac8f-158dece3e021",
+  "version": "2.0",
+  "name": "SVV",
+  "url": "http://localhost:10008/",
+  "tests": [{
+    "id": "14780dfe-8c7e-4f22-a6e0-aed009e8583e",
+    "name": "SiteUp",
+    "commands": [{
+      "id": "7093e86f-0efe-48eb-a6bb-9bec0023a957",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7a0b29d2-f189-414f-b7e1-6e6f9a209bca",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=body",
+      "targets": [
+        ["css=body", "css:finder"],
+        ["xpath=//body", "xpath:position"],
+        ["xpath=//body[contains(.,'404 - Page not found')]", "xpath:innerText"]
+      ],
+      "value": "404 - Page not found"
+    }]
+  }],
+  "suites": [{
+    "id": "ab245e86-bc5d-468f-aab5-8978cbd2cf29",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["14780dfe-8c7e-4f22-a6e0-aed009e8583e"]
+  }],
+  "urls": ["http://localhost:10008/"],
+  "plugins": []
+}
